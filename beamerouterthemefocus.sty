@@ -149,6 +149,8 @@
     \begin{tikzpicture}
         \clip (0,0) rectangle ++(\paperwidth,\paperheight);
         \fill[normal text.bg] (0,0) rectangle ++(\paperwidth,\paperheight);
+        \node[inner sep=0pt] (wlogo) at (0.9\paperwidth, 0.055\paperheight){
+			\includegraphics[width=0.12\textwidth]{logos/W-Logo_Purple_RGB}};
     \end{tikzpicture}%
 }
 
@@ -156,13 +158,17 @@
     \begin{tikzpicture}
         \clip (0,0) rectangle ++(\paperwidth,\paperheight);
         \fill[normal text.bg] (0,0) rectangle ++(\paperwidth,\paperheight);
+        \node[inner sep=0pt] (wlogo) at (0.9\paperwidth, 0.055\paperheight){
+			\includegraphics[width=0.12\textwidth]{logos/W-Logo_Purple_RGB}};
     \end{tikzpicture}%
 }
 
 \defbeamertemplate{background canvas}{focusframe}{%
     \begin{tikzpicture}
         \clip (0,0) rectangle ++(\paperwidth,\paperheight);
-        \fill[frametitle.bg] (0,0) rectangle ++(\paperwidth,\paperheight);        
+        \fill[frametitle.bg] (0,0) rectangle ++(\paperwidth,\paperheight);
+        \node[inner sep=0pt] (wlogo) at (0.9\paperwidth, 0.055\paperheight){
+			\includegraphics[width=0.12\textwidth]{logos/W-Logo_White}};      
     \end{tikzpicture}%
 }
 

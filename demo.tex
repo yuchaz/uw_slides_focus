@@ -1,15 +1,16 @@
 % Full instructions available at:
 % https://github.com/elauksap/focus-beamertheme
 
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usetheme{focus}
 
-\title{Focus: \\ A Minimalist Beamer Theme}
-\subtitle{Subtitle}
-\author{Author 1\texorpdfstring{\\}{,} Author 2}
+
+\title{Presentation title}
+\subtitle{}
+\author{Yu-Chia Chen (\texttt{\href{mailto:yuchaz@uw.edu}{yuchaz@uw.edu}})}
 \titlegraphic{\includegraphics[scale=1.25]{focuslogo.pdf}}
-\institute{Institute Name \\ Institute Address}
-\date{dd mm yyyy}
+\institute{Department of Electrical \& Computer Engineering \\ University of Washington}
+\date{\today}
 
 \begin{document}
     \begin{frame}
@@ -22,6 +23,9 @@
     \subsection{Subsection 1.1}
     \begin{frame}{Simple frame}
         This is a simple frame.
+        \begin{theorem}[Test]
+        	Give a i have b
+        \end{theorem}
     \end{frame}
 
     \begin{frame}[plain]{Plain frame}
@@ -44,12 +48,16 @@
         \vfill
         \texttt{FiraSans} also provides support for mathematical symbols:
         \begin{equation*}
-            e^{i\pi} + 1 = 0.
+            \min_{\|f\|_2 = 1} fLf \text{ is the minimum eigenvalue problem} 
         \end{equation*}
+        \begin{equation}
+        	\int 6x+7 = 888
+        \end{equation}
+        
     \end{frame}
 
     \section{Section 2}
-    \begin{frame}{Blocks}
+    \begin{frame}{Blocks WW}
         \begin{block}{Block}
             Text.
         \end{block}
@@ -59,7 +67,7 @@
         \end{alertblock}
         \pause
         \begin{exampleblock}{Example block}
-            Example \textcolor{example}{text}.
+            Example \textcolor{example}{text ww}.
         \end{exampleblock}
     \end{frame}
     
@@ -124,7 +132,7 @@
     \end{frame}
     
     \begin{frame}[focus]
-        Thanks for using \textbf{Focus}!
+	    \Raleway{Thanks for using \textbf{Focus}!}
     \end{frame}
     
     \appendix

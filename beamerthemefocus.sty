@@ -29,23 +29,22 @@
     \PassOptionsToPackage{numbering=#1}{beamerouterthemefocus}
 }
 
-\newif\if@focus@loadfirafonts
-\@focus@loadfirafontstrue
-
-\DeclareOptionBeamer{nofirafonts}{\@focus@loadfirafontsfalse}
-\ProcessOptionsBeamer
-
+%\newif\if@focus@loadfirafonts
+%\@focus@loadfirafontstrue
+%
+%\DeclareOptionBeamer{nofirafonts}{\@focus@loadfirafontsfalse}
+%\ProcessOptionsBeamer
 
 % LOAD EXTERNAL PACKAGES. ------------------------------------------------------
-\if@focus@loadfirafonts
-    \RequirePackage[T1]{fontenc}
-    
-    \PassOptionsToPackage{type1}{FiraSans}
-    \PassOptionsToPackage{type1}{FiraMono}
-    
-    \RequirePackage{FiraSans}
-    \RequirePackage{FiraMono}
-\fi
+%\if@focus@loadfirafonts
+%    \RequirePackage[T1]{fontenc}
+%    
+%    \PassOptionsToPackage{type1}{FiraSans}
+%    \PassOptionsToPackage{type1}{FiraMono}
+%    
+%    \RequirePackage{FiraSans}
+%    \RequirePackage{FiraMono}
+%\fi
 
 \usecolortheme{focus}
 \usefonttheme{focus}
@@ -53,6 +52,14 @@
 \useoutertheme{focus}
 
 \setbeamertemplate{navigation symbols}{}
+
+% SET LINKS. -----------------------------------------------------------------
+\hypersetup{
+	colorlinks,
+	linkcolor=,
+	linkbordercolor=metallicgold,
+	urlcolor=metallicgold,
+	pdfborderstyle={/S/U/W 1}}
 
 
 % SET MARGINS. -----------------------------------------------------------------

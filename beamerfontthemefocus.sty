@@ -22,24 +22,44 @@
 
 
 % SET FONTS. -------------------------------------------------------------------
-\setbeamerfont{title}{size=\huge, shape=\scshape\bfseries}
-\setbeamerfont{subtitle}{size=\Large, shape=\scshape, parent=structure}
-\setbeamerfont{author}{size=\Large, shape=\scshape}
+\RequirePackage{fontspec}
 
-\setbeamerfont{institute}{size=\large, shape=\scshape}
-\setbeamerfont{date}{size=\large, shape=\scshape}
+\newfontfamily\Raleway{Raleway}
+\newfontfamily\Lato{Lato}
+\newfontfamily\Libertinius{Libertinus Math}
 
-\setbeamerfont{sectiontitle}{size=\huge, series=\scshape\bfseries}
-\setbeamerfont{subsectiontitle}{size=\Large, series=\scshape\bfseries}
-\setbeamerfont{frametitle}{size=\Large, shape=\scshape}
+\usefonttheme{professionalfonts}
+\usefonttheme[onlymath]{serif}
+\usepackage{eulervm}
 
-\setbeamerfont{footline}{size=\scriptsize}
+\setsansfont{Lato}[
+  UprightFont=*-Light,
+  ItalicFont=*-LightItalic,
+  BoldFont=*-Regular,
+  BoldItalicFont=*-Italic
+]
+
+
+\setbeamerfont{title}{size=\huge, shape=\bfseries, family=\Raleway}
+\setbeamerfont{subtitle}{size=\Large, shape=\scshape, parent=structure, family=\Raleway}
+\setbeamerfont{author}{size=\large, family=\Raleway}
+
+\setbeamerfont{institute}{shape=\scshape, family=\Raleway}
+\setbeamerfont{date}{size=\footnotesize, shape=\scshape, family=\Raleway}
+
+\setbeamerfont{sectiontitle}{size=\huge, series=\scshape\bfseries, family=\Raleway}
+\setbeamerfont{subsectiontitle}{size=\Large, series=\scshape\bfseries, family=\Raleway}
+\setbeamerfont{frametitle}{size=\Large, shape=\scshape, family=\Raleway}
+
+\setbeamerfont{footline}{size=\tiny}
 
 \setbeamerfont{focusframe}{size=\huge, shape=\scshape}
 
-\setbeamerfont{description item}{shape=\bfseries}
+\setbeamerfont{block title}{shape=\scshape, family=\Raleway}
 
-\setbeamerfont{caption name}{shape=\bfseries}
+\setbeamerfont{description item}{family=\Raleway}
+
+\setbeamerfont{caption name}{shape=\bfseries, family=\Raleway}
 
 \setbeamerfont{bibliography item}{size=\small, shape=\scshape}
 \setbeamerfont{bibliography entry author}{size=\small, shape=\scshape}

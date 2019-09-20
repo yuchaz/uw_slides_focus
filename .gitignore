@@ -13,3 +13,5 @@
 *.tdo
 *.toc
 *.xml
+.DS_Store
+demo.pdf
