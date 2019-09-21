@@ -4,13 +4,8 @@
 \documentclass[aspectratio=169]{beamer}
 \usetheme{focus}
 
+\input{preamble}
 
-\title{Presentation title}
-\subtitle{}
-\author{Yu-Chia Chen (\texttt{\href{mailto:yuchaz@uw.edu}{yuchaz@uw.edu}})}
-\titlegraphic{\includegraphics[scale=1.25]{focuslogo.pdf}}
-\institute{Department of Electrical \& Computer Engineering \\ University of Washington}
-\date{\today}
 
 \begin{document}
     \begin{frame}
@@ -23,9 +18,6 @@
     \subsection{Subsection 1.1}
     \begin{frame}{Simple frame}
         This is a simple frame.
-        \begin{theorem}[Test]
-        	Give a i have b
-        \end{theorem}
     \end{frame}
 
     \begin{frame}[plain]{Plain frame}
@@ -42,22 +34,24 @@
     \end{frame}
     
     \begin{frame}{Typesetting and Math}
-        The packages \texttt{inputenc} and \texttt{FiraSans}\footnote{\url{https://fonts.google.com/specimen/Fira+Sans}}\textsuperscript{,}\footnote{\url{http://mozilla.github.io/Fira/}} are used to properly set the main fonts.
-        \vfill
+    	The font for title is \texttt{Raleway} and \texttt{Lato} for body.
+    	\vfill
         This theme provides styling commands to typeset \emph{emphasized}, \alert{alerted}, \textbf{bold}, \textcolor{example}{example text}, \dots
         \vfill
-        \texttt{FiraSans} also provides support for mathematical symbols:
-        \begin{equation*}
-            \min_{\|f\|_2 = 1} fLf \text{ is the minimum eigenvalue problem} 
-        \end{equation*}
+        Use package \texttt{eulervm} for type setting math:
         \begin{equation}
-        	\int 6x+7 = 888
-        \end{equation}
-        
+            \text{minimum eigenvalue: }\min_{\|x\|_2 = 1} x^\top Lx
+        \end{equation} 
+        \begin{theorem}[A theorem]
+        	\begin{equation}
+        		\nonumber
+        		\int ay + b dy = \int \frac{1}{2} ay^2 + by + c
+        	\end{equation}
+        \end{theorem}       
     \end{frame}
 
     \section{Section 2}
-    \begin{frame}{Blocks WW}
+    \begin{frame}{Blocks}
         \begin{block}{Block}
             Text.
         \end{block}
@@ -105,7 +99,7 @@
                 \end{description}
         \end{columns}
     \end{frame}
-\setbeamertemplate{caption}[numbered]
+
     \begin{frame}{Figures and Tables}
         \begin{columns}
             \column{0.4\textwidth}
@@ -139,7 +133,7 @@
     \begin{frame}{References}
         \nocite{*}
         \bibliography{demo_bibliography}
-        \bibliographystyle{plain}
+        \bibliographystyle{alpha}
     \end{frame}
     
     \begin{frame}{Backup frame}
